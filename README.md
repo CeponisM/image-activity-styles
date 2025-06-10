@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Image Activity Styles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic React application that applies visually engaging image effects using SVG filters and CSS animations. Users can toggle between multiple preset effects (e.g., Mirror World, Fractal Echo, Time Slip) to transform a background image with creative overlays, animations, and blend modes.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Available Presets](#available-presets)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Presets**: Choose from 10 unique visual presets (e.g., Mirror World, Fractal Echo, Quantum Mirror) to apply different effects to a background image
+- **SVG Filters**: Utilizes SVG filters like turbulence and displacement maps for advanced visual effects
+- **Responsive Design**: Optimized for various screen sizes, aspect ratios, and devices, including touch and high-DPI screens
+- **Smooth Animations**: CSS animations with performance optimizations (e.g., `will-change`, `translateZ(0)`) for smooth transitions
+- **Accessibility**: Supports reduced motion preferences, high-contrast mode, and focus styles for better usability
+- **Dark Mode Support**: Adapts to the user's preferred color scheme
+- **Mobile Optimization**: Larger touch targets and slower animations for mobile devices
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow these steps to set up the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (version 14 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/CeponisM/image-activity-styles.git
+   cd image-activity-styles
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Add a background image:**
+   
+   Place a background image named `background-img.jpg` in the `src` directory (or update the SCSS in `App.scss` to point to your image).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   
+   The app will be available at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Build for production (optional):**
+   ```bash
+   npm run build
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Open the app in your browser
+2. Use the navigation bar at the top to select a preset (e.g., "Mirror World", "Fractal Echo")
+3. Each preset applies unique visual effects to the background image, such as mirroring, color shifts, or fractal distortions
+4. The effects are animated and responsive, adapting to your device's screen size and preferences (e.g., reduced motion or dark mode)
 
-## Learn More
+**💡 Tip:** To customize the background image, replace `background-img.jpg` in the `src` directory or update the `background-image` property in `App.scss`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Available Presets
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application includes **10 unique presets**, each with distinct visual effects:
 
-### Code Splitting
+| Preset | Description |
+|--------|-------------|
+| **Mirror World** | Flipped image layers with hue rotation and screen blending |
+| **Fractal Echo** | Scaled and rotated layers with difference and screen blending |
+| **Time Slip** | Color channel splitting with animated translations |
+| **Reality Merge** | Scaling and rotation with contrast and hue effects |
+| **Dimension Split** | Ripple filter with skewed animations and exclusion blending |
+| **Neural Echo** | Turbulence filter with pulsing brightness and hard-light blending |
+| **Quantum Mirror** | Shifting and scaling with difference and screen blending |
+| **Phase Shift** | Saturated hue rotation with color-dodge blending |
+| **Dream Cascade** | Smooth scaling and rotation with soft-light blending |
+| **Mind Melt** | High-contrast rotation with difference blending |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies
 
-### Analyzing the Bundle Size
+- **React** `^19.0.0` - Frontend framework
+- **React DOM** `^19.0.0` - DOM rendering
+- **SCSS/Sass** `^1.83.0` - Enhanced CSS with variables and nesting
+- **Create React App** `5.0.1` - Build toolchain
+- **SVG Filters** - Advanced visual effects like turbulence and displacement maps
+- **CSS Animations** - Smooth transitions and effects
+- **Node.js** - Development and build processes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! Here's how you can help:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Fork the repository**
+2. **Create a new branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes and commit**
+   ```bash
+   git commit -m "Add your feature description"
+   ```
+4. **Push to your branch**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. **Open a pull request**
 
-### Advanced Configuration
+Please ensure your code follows the project's ESLint configuration and includes appropriate tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Development Guidelines
 
-### Deployment
+- Follow React best practices
+- Use meaningful commit messages
+- Test your changes across different devices and browsers
+- Ensure accessibility standards are maintained
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the **MIT License**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Support
+
+If you encounter any issues or have questions, please [open an issue](https://github.com/CeponisM/image-activity-styles/issues) on GitHub.
+
+⭐ **Don't forget to star this repository if you found it helpful!**
