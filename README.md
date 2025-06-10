@@ -5,10 +5,8 @@ A dynamic React application that applies visually engaging image effects using S
 ## Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Available Presets](#available-presets)
 - [Technologies](#technologies)
 - [Contributing](#contributing)
